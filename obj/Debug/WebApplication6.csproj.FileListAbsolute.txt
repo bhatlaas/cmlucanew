@@ -1,0 +1,18 @@
+c:\users\john.carotta\documents\visual studio 2012\Projects\WebApplication6\WebApplication6\bin\WebApplication6.dll
+c:\users\john.carotta\documents\visual studio 2012\Projects\WebApplication6\WebApplication6\bin\WebApplication6.pdb
+c:\users\john.carotta\documents\visual studio 2012\Projects\WebApplication6\WebApplication6\obj\Debug\WebApplication6.dll
+c:\users\john.carotta\documents\visual studio 2012\Projects\WebApplication6\WebApplication6\obj\Debug\WebApplication6.pdb
+C:\Users\john.carotta\Documents\Visual Studio 2012\Projects\WebApplication6\WebApplication6\obj\Debug\WebApplication6.csprojResolveAssemblyReference.cache
+C:\Users\john.carotta\Desktop\NewCMLUCA\bin\WebApplication6.dll.config
+C:\Users\john.carotta\Desktop\NewCMLUCA\bin\WebApplication6.dll
+C:\Users\john.carotta\Desktop\NewCMLUCA\bin\WebApplication6.pdb
+C:\Users\john.carotta\Desktop\NewCMLUCA\obj\Debug\WebApplication6.csprojResolveAssemblyReference.cache
+C:\Users\john.carotta\Desktop\NewCMLUCA\obj\Debug\WebApplication6.dll
+C:\Users\john.carotta\Desktop\NewCMLUCA\obj\Debug\WebApplication6.pdb
+C:\Users\john.carotta\Desktop\CMLUCA\bin\WebApplication6.dll.config
+C:\Users\john.carotta\Desktop\CMLUCA\bin\WebApplication6.dll
+C:\Users\john.carotta\Desktop\CMLUCA\bin\WebApplication6.pdb
+C:\Users\john.carotta\Desktop\CMLUCA\obj\Debug\WebApplication6.csprojAssemblyReference.cache
+C:\Users\john.carotta\Desktop\CMLUCA\obj\Debug\WebApplication6.csproj.CoreCompileInputs.cache
+C:\Users\john.carotta\Desktop\CMLUCA\obj\Debug\WebApplication6.dll
+C:\Users\john.carotta\Desktop\CMLUCA\obj\Debug\WebApplication6.pdb

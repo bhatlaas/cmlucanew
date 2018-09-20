@@ -1,0 +1,129 @@
+﻿* {
+  margin:0px;
+  padding:0;
+}
+html,body {
+  height:100%;
+  /*background-image: url('/Images/gray_gradient.png');*/
+}
+body {
+	display: -webkit-box;
+    margin-top: 50px;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	display: -ms-box;
+	-ms-box-orient: vertical;
+	-ms-box-pack: center;
+	-ms-box-align: middle;
+	display:block;
+	box-orient: vertical;
+	box-pack: center;
+	box-align: center;
+
+	font: .7em/1.5 "lucida grande", arial, sans-serif;
+	/*background: #333;*/
+  /*For Firefox*/ 
+	width: 100%;
+    height:100%;
+ 
+}
+h {
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+p {
+    height:auto;
+    padding: 0;
+}
+p {
+  height:auto;
+  padding:0;
+  overflow:hidden;
+  -webkit-transition:height .4s ease-out, padding .4s ease-out;
+  -moz-transition:height .4s ease-out, padding .4s ease-out;
+  -o-transition:height .4s ease-out, padding .4s ease-out;
+  -ms-transition:height .4s ease-out, padding .4s ease-out;
+  transition:height .4s ease-out, padding .4s ease-out;
+}
+h1 {
+	font-size: 1.6em;
+	font-family: "Perpetua Titling MT";
+	font-weight: normal;
+}
+a {
+  display:block;
+  height:23px;
+  line-height:23px;
+  background:-webkit-gradient(
+    linear, 0 0, 0 100%,
+    from(#eee), to(#ccc)
+  );
+  background:-moz-linear-gradient(#eee, #bbb);
+  background:-o-linear-gradient(#eee, #bbb);
+  background:-ms-linear-gradient(#eee, #bbb);
+  background:linear-gradient(#eee, #bbb);
+  color:#333;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:0 1px 0 rgba(255,255,255,.5);
+  /*border-bottom:1px solid #aaa;*/
+}
+#intro {
+  border-radius:2px 2px 0 0;
+  height:auto;
+}
+#contact {
+  border-radius:0 0 3px 3px;
+}
+a:hover, a:focus {
+  opacity:.9;
+}
+a:active {
+  background:-webkit-gradient(
+    linear, 0 0, 0 100%,
+    from(#ccc), to(#ddd)
+  );
+  background:-moz-linear-gradient(#ccc, #ddd);
+  background:-o-linear-gradient(#ccc, #ddd);
+  background:-ms-linear-gradient(#ccc, #ddd);
+  background:linear-gradient(#ccc, #ddd);
+  color:#000;
+}
+:target + p {
+ 
+  /*border-bottom:1px solid #ccc;*/
+}
+
+#intro:target + p {
+height:auto;
+  
+}
+#info:target + p {
+  height:auto;
+ 
+}
+#contact:target {
+    height:auto;
+    border-radius:0;
+   overflow:visible;
+
+}
+#contact:target + p {
+  height:auto;
+  overflow:visible;
+}
+#airspace:target {
+    height:auto;
+  border-radius:0;
+   overflow:visible;
+}
+#airspace:target + p {
+  height:auto;
+}

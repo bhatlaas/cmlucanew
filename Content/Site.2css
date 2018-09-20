@@ -1,0 +1,281 @@
+﻿html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+    color: black;
+    background-image: url('/Images/Blue-Gradient-Lines-Wallpapers.png');
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:0.78em;
+}
+
+.container
+{
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+      
+    /*margin-bottom:auto;*/
+    width: 1000px;
+    background:LightGray;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.CALink 
+{
+    position:absolute;
+    top:30px;
+    right:350px;
+    width:0px;
+    background-color:transparent;
+    display:inline;
+    white-space:nowrap;
+
+}
+
+.MilLink
+{
+    position:absolute;
+    top:30px;
+    right:250px;
+    width:0px;
+    background-color:transparent;
+    display:inline;
+    white-space:nowrap;
+
+}
+
+.ConLink
+{
+    position:absolute;
+    top:30px;
+    right:125px;
+    width:0px;
+    background-color:transparent;
+    display:inline;
+    white-space:nowrap;
+}
+
+
+
+.header
+{
+  
+    background-image: url('/Images/header_cmluca_text5.png');
+    background-repeat:no-repeat;
+    height: 160px;
+    width:1000px;
+    margin-left:20px;
+    margin-top:25px;
+   
+}
+
+
+.logo
+{
+    position: absolute;
+    left: 29px;
+    top: 12px;
+}
+
+
+.body
+{
+    position: absolute;
+    top: 120px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.titleImg {
+    position: absolute;
+    left: 427px;
+    top: 52px;
+}
+
+.leftPane
+{
+    position: absolute;
+    right: 15px;
+    top: 60px;
+    bottom: 30px;
+    width: 250px;
+    overflow:hidden;
+    padding-top: 0px;
+}
+
+.ribbonColumn {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 250px;
+    height: 287px;
+    background-image: url('Images/ribbon_column.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 18px;
+    margin-top: 0px;
+}
+
+.resultsDiv {
+    margin-top: 23px;
+    width: 200px;
+    min-height: 300px;
+    margin-left: 0px;
+    font-style:italic;
+}
+
+.resultsBox {
+    width: 200px;
+}
+
+.toolbar {
+    width:100%;
+    height:40px;
+    background:gray;
+    left:40px;
+    right:40px;
+}
+
+#map
+{
+   position: absolute;
+    left:15px;
+    top: 225px;
+    bottom: 25px;
+    right:265px;
+
+
+}
+
+.mapFooter {
+    
+    position: absolute;
+    height: 22px;
+    left: 20px;
+    right: 20px;
+    bottom: 0px;
+    text-align:center;
+    padding-top: 6px;
+    border-top: 1px solid #dadada;
+    font-size: 8pt;
+}
+
+.msgBox {
+    border-top: 1px dashed #dadada;
+    width: 210px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.roundedCorners
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#btnbase {
+    position:absolute;
+    left:10px;
+    height:50px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#btnPrint {
+    position:absolute;
+    left:185px;
+    height:40px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:2px;
+    
+}
+
+#lblCounty {
+    position: absolute;
+    left: 300px;
+}
+
+#lblFind {
+    position: absolute;
+    left: 450px;
+    width:80px
+}
+
+#searchText {
+    width:150px;
+}
+
+#btnFind {
+    position:absolute;
+    
+    top:17px;
+    width:60px;
+    float:right;
+}
+
+#btnbase {
+    position:absolute;
+    left: 0px;
+    width:150px;
+    height:40px;
+    left:5px;
+    top:2px;
+   
+
+}
+
+#results {
+    position:absolute;
+    
+   margin:5px;
+   
+    left:20px;
+    bottom:20px;
+    background-color:white;
+    visibility:visible;
+   
+
+}
+
+/*.toolbar {
+
+    text-decoration-color:black;
+    font-size:12px;
+    height:45px;
+    
+}*/
+
+.shadow
+{
+    box-shadow: 4px 4px 8px #adadad;
+    -webkit-box-shadow: 4px 4px 8px #adadad;
+    -moz-box-shadow: 4px 4px 8px #adadad;
+    -o-box-shadow: 4px 4px 8px #adadad;
+}
+
+#address
+{
+    height: 50px;
+}
+
+#TextZip
+{
+    margin-bottom: 1px;
+}

@@ -1,0 +1,140 @@
+﻿html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+    color: black;
+    background-image: url('/Images/Blue-Gradient-Lines-Wallpapers.png');
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:0.78em;
+}
+
+.container
+{
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+      
+    /*margin-bottom:auto;*/
+    width: 1000px;
+    background:LightGray;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.title {
+    font-size:16px;
+    font-weight:bold;
+    padding-left:10px;
+}
+
+#GeoName {
+    font-size: 16px;
+    font-weight: bold;
+    
+    
+}
+
+#Conflicts {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+
+#GeographicArea {
+    
+    
+    position: absolute;
+    top:30px;
+    padding-left: 10px;
+}
+
+
+
+.header
+{
+   position: absolute;
+    top: 80px;
+    
+    left: 10px;
+    
+    
+    
+   
+   
+}
+
+
+
+
+
+.body
+{
+    position: absolute;
+    top: 120px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.leftPane
+{
+    position: absolute;
+    right: 220px;
+   
+    bottom: 30px;
+    width: 250px;
+    
+}
+
+
+
+#map {
+    position: absolute;
+    left: 15px;
+    height:64%;
+    width:50%;
+    bottom: 30px;
+}
+.mapFooter {
+    
+    position: absolute;
+    height: 22px;
+    left: 20px;
+    right: 20px;
+    bottom: 0px;
+    text-align:center;
+    padding-top: 6px;
+    border-top: 1px solid #dadada;
+    font-size: 8pt;
+}
+
+.msgBox {
+    border-top: 1px dashed #dadada;
+    width: 210px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.roundedCorners
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CMLUCA</title>
+
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/dojo/dijit/themes/claro/claro.css"/>
+        <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css"/>
+   <!-- <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css"/>    
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css"/>-->
+
+        <link rel="stylesheet" href="Content/PrintCSS.css" />
+    <link href="Content/accordion.css" rel="stylesheet"/>
+<style> 
+     
+      /*.esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail{
+        border-color: #66FFFF !important;
+      }*/
+      
+    </style> 
+    
+   <!--  <script type="text/javascript" src="/jsapi_vsdoc12_v35.js"></script>-->
+    
+     <script type="text/javascript" src="JavaScript1.js"></script>
+      <!--<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5"></script>-->
+    <script src="http://js.arcgis.com/3.9/"></script>
+        <script>
+            dojo.require("esri.map");
+           
+            dojo.require("esri.layers.ArcGISDynamicMapServiceLayer");
+            dojo.require("esri.layers.ArcGISTiledMapServiceLayer");
+            
+            dojo.require("dijit.layout.BorderContainer");
+           
+            dojo.require("dojo.parser");
+            dojo.require("dojo.domReady!");
+            dojo.require("dojo.dom");
+            dojo.require("dojo._base.array");
+           
+            dojo.require("esri.symbols.SimpleFillSymbol");
+            dojo.require("esri.symbols.SimpleLineSymbol");
+            dojo.require("esri.graphic");
+           
+
+
+
+
+            var app = {};
+            //var map, locator, geom, geom2, QT, QTAir, zoomextent, QTBase, QTSpecial, QCounty, QSpecial, QAir, QBase, symbol, counter, identifyTask, msgInstallations, identifyParams, msgSpecialAir, circleSymb, msgTrainingRoutes;
+            //var map, locator, geom, geom1000, clickpoint, sender, geom4000, gsvc, geom2, doBuffer, params, QT, zoomextent, QCounty, symbol, counter, identifyTask, BufferParameters, msgInstallations, identifyParams, msgSpecialAir, circleSymb, msgTrainingRoutes;
+
+            //  dojo.ready(
+            function init() {
+                /// <summary>
+                /// Initializes the map for the first time.
+                /// </summary>
+                //var popup = new esri.dijit.Popup({
+                //    fillSymbol: new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255, 0, 0]), 2), new dojo.Color([255, 255, 0, 0.25]))
+                //}, dojo.create("div"));
+
+
+                
+
+                map = new esri.Map("map", {
+                    basemap: "hybrid",
+                   
+
+                    logo: false
+                });
+
+
+               
+             
+               
+
+
+
+          
+
+
+
+
+
+                var Branches = new esri.layers.ArcGISDynamicMapServiceLayer("http://services.gis.ca.gov/ArcGIS/rest/services/IntelligenceMilitary/MilitaryInstallations/MapServer");
+                map.addLayer(Branches);
+
+                var Paths = new esri.layers.ArcGISDynamicMapServiceLayer("http://services.gis.ca.gov/ArcGIS/rest/services/IntelligenceMilitary/MilitaryTrainingFlightRoutes/MapServer");
+                map.addLayer(Paths);
+
+                var airspace = new esri.layers.ArcGISDynamicMapServiceLayer("http://services.gis.ca.gov/ArcGIS/rest/services/IntelligenceMilitary/MilitarySpecialUseAirspace/MapServer");
+                map.addLayer(airspace);
+
+                var counties = new esri.layers.ArcGISDynamicMapServiceLayer("https://services.gis.ca.gov/ArcGIS/rest/services/Boundaries/CA_Counties/MapServer");
+                map.addLayer(counties);
+
+
+                map.setExtent(reportzoom);
+
+            }
+            //   );
+
+
+
+      
+
+       
+
+
+
+
+          
+
+
+            dojo.ready(init);
+
+
+        </script>
+
+
+
+</head>
+  <body class="claro">
+        <form id="Form1"  runat="server" style="height: 100%;">
+
+           
+           
+            <div class="container"> 
+
+
+
+                <div class="header">
+                Thank you for using the CMLUCA system.
+
+California Government Code section 65352 requires Cities and Counties which are adopting or substantially amending a general plan to refer the proposed action to the branches of the United States Armed Forces when the proposed action is within 1,000 feet of a military installation, lies within special use airspace, or is beneath a low-level flight path, as defined in Section 21098 of the Public Resources Code.
+
+If you are receiving this report there are installations, special use airspace or low-level flight paths within your County, as depicted on the CMLUCA map. Your County should follow the protocol outlined in Gov. Code sections 65352, 65404, 65940, and 65944, as amended by SB 1462 (Khuel, 2004). Specifically, your County should contact the Military Points of Contact listed on the SB 1462 Point of Contact list. The list is available here: http://cmluca.projects.atlas.ca.gov/SB1462_POClistupdated4_2013.htm
+
+The list is also available on the Governor’s Office of Planning and Research (OPR) website: http://opr.ca.gov/s_military.php
+
+OPR has published a Community and Military Compatibility Planning Supplement to the General Plan Guidelines, which may assist you with your planning efforts. The Supplement is available here: http://opr.ca.gov/docs/Military_GPG_Supplement.pdf
+
+Please contact OPR at (916) 322-2318 or P.O. Box 3044, Sacramento, CA 95812-3044 if you have questions about your military notification requirements. Should you have questions regarding military operations within your area, contact any of the Military Point of Contact available at http://cmluca.projects.atlas.ca.gov/SB1462_POClistupdated4_2013.html. If you are unsure of the Military Point of Contact, please contact the Regional Coordination Team at (619) 532-4268 or mail your inquiry to 1220 Pacific Hwy, San Diego, CA 92132.
+
+                    
+                </div>
+                
+                <div class="body">
+                    <div class="leftPane">
+                       
+
+                            <section>
+ <a href="#intro" id="intro">
+<h1>Military Bases</h1>
+</a>
+<p>
+    <img src="/Images/Branches.png" />
+</p>
+</section>
+<section>
+<a href="#info" id="info">
+ <h1>Flight Paths</h1>
+</a>
+<p>
+ <img src="/Images/Paths.png"/>
+
+</p>
+</section>
+<section>
+<a href="#airspace" id="airspace">
+ <h1>Air Space</h1>
+</a>
+<p>
+<img src="/Images/Airspace.png"/>
+
+</p>
+</section>
+<section>
+<a href="#contact" id="contact">
+<h1>County Boundaries</h1>
+</a>
+<p>
+<img src="/Images/Counties.png"/>
+
+</p>
+ </section>
+                           
+                        </div>
+                    </div>
+                        
+                    <div class="mapFrame" id="map">
+                     
+
+                    </div>
+
+                    <div class="mapFooter">
+
+                     
+		Copyright &copy; 2010 State of California
+	
+                       
+                    </div>
+
+              
+
+
+
+        
+
+
+<div id="defaulttext"> 
+
+    <label id="deftext"></label>
+   
+   
+
+</div>
+
+
+
+
+                 </div>
+
+               
+        </form>
+    </body>
+</html>
